@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 110%;
+  }
+  body{
+    background-image: linear-gradient(#a02c2c, #5c1111);
+    font-family: Arial, sans-serif;
+  }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: linear-gradient(#24303c, #151b22);
+    
+}
+
+.opciones_usuario {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.informacio_usuario {
+    width: 70px;
+    height: 70px;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-image: url(perfil.png);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.izquierda, .centro, .derecha {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    width: 30%;
+
+    
+}
+
+.izquierda {
+    background-color: #24303c;
+    border-radius: 5%;
+    border: 2px solid #1f53c5
+}
+.izquierda h2{
+    color: white;
+    text-shadow: 
+    -1.5px -1.5px 0 rgb(0, 0, 0),  
+    1.5px -1.5px 0 rgb(0, 0, 0),
+    -1.5px 1.5px 0 rgb(0, 0, 0),
+    1.5px 1.5px 0 rgb(0, 0, 0);
+}
+term_cond{
+    color: #ffffff;
+    font-size: 36;
+    position: relative;
+    top: 90px;
+}
+a{
+    text-decoration: none;
+}   
+.centro {
+    background-color: #24303c;
+    border-radius: 5%;
+    border: 2px solid #1f53c5
+}
+ 
+main .centro .artista1 .img{
+    position:absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 15px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+}
+.derecha {
+    background-color: #24303c;
+    border-radius: 5%;
+    border: 2px solid #1f53c5
+}
+h2{
+    color: #ffffff;
+}
+p{
+    position: relative;
+    color: #ffffff;
+    top: 20px;
+}
+.controls {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+
+
+
+img{
+    position:relative;
+    display: flex;
+    right: 12px;
+    bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid black;
+    animation: girar 10s linear infinite;
+
+
+}
+
+artista1{
+    position: relative;
+    left: 90px;
+    top: 30px;
+    color: #ffffff;
+    font-size: 32;
+    display: flex;
+    justify-content: space-between;
+    text-shadow:
+    -1.5px -1.5px 0 rgb(0, 0, 0),  
+    1.5px -1.5px 0 rgb(0, 0, 0),
+    -1.5px 1.5px 0 rgb(0, 0, 0),
+    1.5px 1.5px 0 rgb(0, 0, 0);
+}
+
+datos{
+    position: relative;
+    left: 90px;
+    bottom: 30px;
+    color: #ffffff;
+    font-size: 32;
+    display: flex;
+    justify-content: space-between;
+    text-shadow:
+    -1.5px -1.5px 0 rgb(0, 0, 0),  
+    1.5px -1.5px 0 rgb(0, 0, 0),
+    -1.5px 1.5px 0 rgb(0, 0, 0),
+    1.5px 1.5px 0 rgb(0, 0, 0);
+}
+
+.button {
+    background-color: #24303c;
+    border-color: #1f53c5;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    top: 30px;
+    left: 70px;
+    overflow: hidden;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s;
+}
+
+.button:hover {
+    background-color: #1e2933;
+    transform: scale(1.05);
+}
+
+.button:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+a img{
+    position:absolute;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 15px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    animation: girar 3s linear infinite;
+  }
+  @keyframes girar{
+    0%{
+      transform: rotateZ(360deg);
+    }
+    100%{
+      transform: rotateZ(0);
+    }
+  }
+
+.botons{
+    color:#fff;
+    padding: 10px;
+    margin-right: 20px;
+    background: #24303c;
+    font-family:Arial;
+    border-color: #1f53c5;
+    border-radius: 16%;
+}
+buscar{
+    position: relative;
+    top: 20px;
+    right: 65px;
+}
+artistas{
+    position: relative;
+    bottom: 40px;
+    right: 64px;
+
+}
